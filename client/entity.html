@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entity</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="navigation-menu">
+                <a href="entities.html" id="entites-link" class="current-link">Сущности</a>
+                <a href="#" id="create-entity-link">Создать сущность</a>
+                <a href="#" id="entity-objects-link">Объекты сущностей</a>
+                <a href="#" id="struct-entities-link">Структура сущностей</a>
+            </div>
+            <div class="profile-menu">
+                <a href="#">Пользователь</a>
+            </div>
+        </div>
+        <div class="page-content">
+            <div>
+                <div class="page-title">Сущность</div>
+                <div class="main-content">
+                    <input class="entity-input" id="entity-id-input" type="text" placeholder="id" disabled>
+                    <input class="entity-input" id="entity-name-input" type="text" placeholder="Наименование">
+                    <input class="entity-input" id="entity-systemName-input" type="text" placeholder="Системное наименование">
+                    <div id="save-entity-btn">Сохранить</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/entity.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-color: #0C0D17;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.header {
+    height: 80px;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-menu a {
+    display: block;
+    width: fit-content;
+    color: #FF3104;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 70px;
+}
+
+.profile-menu {
+    display: flex;
+    align-items: center;
+}
+
+.profile-menu a {
+    display: block;
+    width: fit-content;
+    color: #1BFFC8;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 70px;
+}
+
+.page-content {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page-title {
+    height: 80px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 80px;
+}
+
+.main-content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.init-page-img {
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.auth-block {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 70px 20px 0;
+}
+
+.auth-block a {
+    display: block;
+    height: 50px;
+    padding: 0 50px 0 50px;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+#reg-btn {
+    margin-right: 25px;
+    background-color: #FF3104;
+    color:#1BFFC8
+}
+
+#sign-in-btn {
+    background-color: #1BFFC8;
+    color: #FF3104;
+}
+
+/* entities */
+.current-link {
+    color: #1BFFC8 !important;
+}
+
+.entities-block {
+    width: fit-content;
+}
+
+.entity-table-toolbar {
+    display: flex;
+    margin: 10px 0;
+}
+
+.entity-table {
+    border-collapse: collapse;
+}
+
+.entity-table-toolbar div {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #FF3104;
+    padding: 0 30px;
+    border-radius: 20px;
+    margin-right: 30px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.entity-table thead .head-entity-table-row {
+    background-color: #1BFFC8;
+}
+
+.entity-table thead .head-entity-table-row td {
+    height: 50px;
+    max-width: 500px;
+    width: 400px;
+    color:#FF3104;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.entity-table thead .search-entity-table-row input {
+    background: rgba(27, 255, 202, 0.6);
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    border: none;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.entity-table thead .search-entity-table-row input:focus {
+    outline: none;
+    border: 1px solid #FF3104;
+}
+
+.entity-table tbody tr:hover {
+    cursor: pointer;
+}
+
+.entity-table tbody td {
+    box-sizing: border-box;
+    height: 50px;
+    max-width: 500px;
+    width: 400px;
+    color: white;
+    font-size: 16px;
+    padding-left: 20px;
+    border: 2px solid #1BFFC8;
+}
+
+.entity-table-toolbar div:hover {
+    cursor: pointer;
+}
+
+
+/* entity */
+
+.entity-input {
+    width: 500px;
+    height: 50px;
+    background: none;
+    outline: none;
+    color: white;
+    border: solid white 1px;
+    margin-bottom: 20px;
+    padding: 0 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#save-entity-btn {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #FF3104;
+    padding: 0 30px;
+    border-radius: 20px;
+    margin-right: 30px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+
+/* auth */
+
+.auth {
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feild {
+    width: 300px;
+    height: 50px;
+    background: none;
+    outline: none;
+    color: white;
+    border: solid white 1px;
+    margin-bottom: 20px;
+    padding: 0 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#auth-btn {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #FF3104;
+    padding: 0 30px;
+    border-radius: 20px;
+    height: 40px;
+    width: fit-content;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.auth>div{
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 30px;
+}

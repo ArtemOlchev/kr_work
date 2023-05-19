@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entities</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="navigation-menu">
+                <a href="#" id="entites-link" class="current-link">Сущности</a>
+                <a href="entity.html" id="create-entity-link">Создать сущность</a>
+                <a href="#" id="entity-objects-link">Объекты сущностей</a>
+                <a href="#" id="struct-entities-link">Структура сущностей</a>
+            </div>
+            <div class="profile-menu">
+                <a href="#">Пользователь</a>
+            </div>
+        </div>
+        <div class="page-content">
+            <div>
+                <div class="page-title">Ваши сущности</div>
+                <div class="main-content">
+                    <div class="entities-block">
+                        <div class="entity-table-toolbar">
+                            <div id="delete-entity-btn">Удалить</div>
+                            <div id="update-entity-btn">Обновить</div>
+                        </div>
+                        <table class="entity-table">
+                            <thead>
+                                <tr class="head-entity-table-row">
+                                    <td>id</td>
+                                    <td>Наименование</td>
+                                    <td>Системное наименование</td>
+                                </tr>
+                                <!-- <tr class="search-entity-table-row">
+                                    <td><input id="search-entity-id" type="text" placeholder="Введите id"></td>
+                                    <td><input id="search-entity-name" type="text" placeholder="Введите наименование"></td>
+                                    <td><input id="search-entity-system-name" type="text" placeholder="Введите системное наименование"></td>
+                                </tr> -->
+                            </thead>
+                            <tbody>
+                                <tr id="cbebac95-64ea-4e57-9f70-0d91e6c0695d" onclick="window.location='index.html?id=123'">
+                                    <td>0f67d198-0e36-4734-ac07-52c0c9608de1</td>
+                                    <td>Сущность 3</td>
+                                    <td>entity_3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="scripts/entities.js"></script>
+</body>
+</html>
