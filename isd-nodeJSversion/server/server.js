@@ -151,5 +151,33 @@ app.post('/auth/', async function(req, res) {
     
 })
 
+app.post('/verifyJwtToken/', function(req, res) {
+    let result
+    try {
+        let body = req.body
+        if (user.VerifyJWTToken(body.token)) result = true
+    } catch (error) {
+        result = false
+    }
+
+    res.send(JSON.stringify({isVerify: result}))
+})
+
+app.get('/user/', async function(req, res) {
+    let us = await user.GetUsers()
+    res.send(JSON.stringify(us))
+})
+
+app.get('/user/:id', async function(req, res) {
+    let u = await user.GetUser(req.params.id)
+    res.send(JSON.stringify(u))
+})
+
+app.put('/user/', async function(req, res) {
+    let reqUser = req.body
+    let u = await user.SaveUser(reqUser)
+    res.send(JSON.stringify(u))
+})
+
 
 app.listen(8000)

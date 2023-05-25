@@ -200,7 +200,7 @@ function VerifyJWTToken(token) {
         var decoded = jwt.verify(token, 'Hello')
         return decoded
     } catch (error) {
-        throw new Erorr(`Пользователь не авторизирован`)
+        throw error
     }
 }
 

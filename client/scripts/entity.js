@@ -1,3 +1,7 @@
+import { verifyToken } from "./rest-user.js"
+
+verifyToken();
+
 let currentURL = document.location.href
 let searchParams = new URLSearchParams(document.location.search)
 let entityIdInput = document.getElementById('entity-id-input')

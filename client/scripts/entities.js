@@ -1,4 +1,7 @@
 import { getEntities, deleteEntity } from "./rest-entity.js"
+import { verifyToken } from "./rest-user.js"
+
+verifyToken();
 
 let tableBody = document.querySelector('.entity-table tbody')
 setEntityTable()

@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KR</title>
+    <title>User</title>
 </head>
 <body>
     <div class="main">
         <div class="header">
             <div class="navigation-menu">
-                <a href="#" id="entites-link">Сущности</a>
-                <a href="entity.html" id="create-entity-link">Создать сущность</a>
+                <a href="entities.html" id="entites-link" class="current-link">Сущности</a>
+                <a href="#" id="create-user-link">Создать сущность</a>
                 <a href="#" id="entity-objects-link">Объекты сущностей</a>
                 <a href="#" id="struct-entities-link">Структура сущностей</a>
             </div>
@@ -22,19 +22,17 @@
         </div>
         <div class="page-content">
             <div>
-                <div class="page-title">Создай свою информационную систему</div>
+                <div class="page-title">Пользователь</div>
                 <div class="main-content">
-                    <img class="init-page-img" src="img/init_page_schem.jpg" alt="init-page-img" srcset="">
-                </div>
-            </div>
-            <div class="footer">
-                <div class="auth-block">
-                    <a id="reg-btn" href="#">Зарегистрироваться</a>
-                    <a id="sign-in-btn" href="#">Войти</a>
+                    <input class="user-input" id="user-id-input" type="text" placeholder="id" disabled>
+                    <input class="user-input" id="user-name-input" type="text" placeholder="Наименование">
+                    <input class="user-input" id="user-login-input" type="text" placeholder="Логин">
+                    <input class="user-input" id="user-password-input" type="text" placeholder="Пароль">
+                    <div id="save-user-btn">Сохранить</div>
                 </div>
             </div>
         </div>
     </div>
-    <script type="module" src="scripts/index.js"></script>
+    <script type="module" src="scripts/user.js"></script>
 </body>
 </html>

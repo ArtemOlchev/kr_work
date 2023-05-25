@@ -1,4 +1,4 @@
-import { auth } from "./user.js";
+import { auth } from "./rest-user.js";
 let loginInput = document.getElementById('login')
 let passwordInput = document.getElementById('password')
 
